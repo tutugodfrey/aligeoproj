@@ -4,7 +4,8 @@
   "description": "application to test arithmetic and geometric progression",
   "main": "aligoejs/aligeofunc.js",
   "scripts": {
-    "test": "mocha testjs/aligeotest.js"
+    "test": "mocha testjs/aligeotest.js",
+    "test:watch": "npm run test -- --watch"
   },
   "repository": {
     "type": "git",
