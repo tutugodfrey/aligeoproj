@@ -1,0 +1,27 @@
+{
+  "name": "aligeoproj",
+  "version": "1.0.0",
+  "description": "application to test arithmetic and geometric progression",
+  "main": "aligoejs/aligeofunc.js",
+  "scripts": {
+    "test": "mocha testjs/aligeotest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tutugodfrey/aligeoproj.git"
+  },
+  "keywords": [
+    "tdd",
+    "js"
+  ],
+  "author": "Tutu Godfrey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tutugodfrey/aligeoproj/issues"
+  },
+  "homepage": "https://github.com/tutugodfrey/aligeoproj#readme",
+  "dependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2"
+  }
+}
