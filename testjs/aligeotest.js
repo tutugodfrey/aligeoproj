@@ -20,11 +20,11 @@ describe("aliGeo", function(){
 
 	describe("handle valid input", function(){
 
-		it ("should return 0 for []", function(){
+		it ("should return 0 for [2, 4, 8, 16, 32]", function(){
 			assert.equal(arigeo([2, 4, 8, 16, 32]), "Geometric")
 		});
 
-		it ("should return 0 for []", function(){
+		it ("should return 0 for [2, 4, 6, 8, 32]", function(){
 			assert.equal(arigeo([2, 4, 6, 8, 10]), "Arithmetic")
 		});
 
