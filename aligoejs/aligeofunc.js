@@ -1,36 +1,6 @@
-
-
-
-
-function aritfunc(arrayvalue){
-	let checker = arrayvalue[1] - arrayvalue[0];
-	var arithmetic = false;
-	for (let i = 0; i < arrayvalue.length; i++){
-		let confirm = arrayvalue[i + 1] - arrayvalue[i];
-		if (confirm === checker){
-			arithmetic = true;
-		}  
-	}
-	return arithmetic;
-}
-
-
-function geofunc(arrayvalue){
-	var checker = arrayvalue[1] - arrayvalue[0];
-	var geometric = false;
-	for (let i = 1; i > arrayvalue.length; i++){
-		var  confirm = (arrayvalue[i + 1] - arrayvalue[i])/(arrayvalue[i] - arrayvalue[i - 1]);
-		if(confirm === checker){
-			geometric = true;
-		} 
-	}
-	//return true;
-return geometric;
-}
-
-
-
-
+/* function to test whether an array is empty or contain integer that
+ is earithmetic in progression or geometric or neither */
+ 
 module.exports = function arigeo(arrayvalue) {
 	if (arrayvalue.length === 0){
 		return 0;
