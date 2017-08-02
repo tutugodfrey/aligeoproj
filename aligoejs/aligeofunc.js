@@ -1,13 +1,14 @@
 /* function to test whether an array is empty or contain integer that
  is earithmetic in progression or geometric or neither */
  
-module.exports = function arigeo(arrayvalue) {
+module.exports = function aritGeo(arrayvalue) {
 	if (arrayvalue.length === 0){
+		//input not an array
 		return 0;
 	} 	else   {
-		let checker1 = arrayvalue[1] - arrayvalue[2];
+		let checker1 = arrayvalue[1] - arrayvalue[2];   //store common difference
 		var progressing = true;
-		var counter = 2;
+		var counter = 2;							//increment loop
 		var  geometric = false;
 		var arithmetic = false;
 		while (progressing){
@@ -16,7 +17,7 @@ module.exports = function arigeo(arrayvalue) {
 
 			}	else {
 				arithmetic = false;
-				progressing = false;
+				progressing = false;  				//offset  progressing when case fails
 
 			} 	
 
@@ -26,7 +27,7 @@ module.exports = function arigeo(arrayvalue) {
 				geometric = true;
 			}	else {
 				geometric = false;
-				progressing = false;
+				progressing = false;				//offset progressing when case fails
 			}
 			
 			counter ++;
@@ -37,6 +38,7 @@ module.exports = function arigeo(arrayvalue) {
 		} else if (arithmetic === true){
 			return "Arithmetic";
 		}	else {
+				//when input is not empty but it's neither arithmetic not geometric
 			return -1;
 		}
 
